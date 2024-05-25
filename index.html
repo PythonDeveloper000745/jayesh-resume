@@ -16,7 +16,7 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1, h3 {
             color: #343a40;
         }
         hr {
@@ -35,9 +35,6 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-        <!--        <a class="navbar-brand" href="#">-->
-        <!--            <img src="jayesh_logo.png" alt="Jayesh Bhawsar Logo" height="50">-->
-        <!--        </a>-->
         <div class="ml-auto">
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,17 +65,6 @@
 
 
 <div class="container mt-5" id="resume">
-
-<!--    <div>-->
-<!--        <img src="jayesh_logo.png" alt="Jayesh Bhawsar Logo" height="50">-->
-<!--    </div>-->
-<!--    <div class="text-center">-->
-<!--        <h1>JAYESH BHAWSAR</h1>-->
-<!--        <p>Current Address: 199, Shyam Nagar Annex A, Near Mr 10 Square, Sukhliya, Indore, 452001</p>-->
-<!--        <p>Email: <a href="mailto:mady000745@gmail.com">mady000745@gmail.com</a> | Contact: +917057053741</p>-->
-<!--    </div>-->
-
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 text-center"> <!-- Adjust column widths for mobile and desktop -->
@@ -93,11 +79,11 @@
     <hr>
 
     <section id="summary">
-        <h2>Professional Summary</h2>
-        <ul>
+        <h3>Professional Summary</h3>
+        <ul style="list-style-type: square;">
             <li>Python programming professional certified in Python and Django, currently working as Python Developer in Algoptions Technologies Pvt Ltd - Indore, MP</li>
             <li>2+ years of experience in Python/Django Programming</li>
-            <li>Well versed in NumPy, Pandas, Object Oriented Programming (OOPs)</li>
+            <li>Well versed in NumPy, Pandas, Object-Oriented Programming (OOPs)</li>
             <li>Able to develop and design APIs with Django Rest Framework</li>
             <li>Core Python, Comprehension, CSV, Exception handling, database handling</li>
             <li>Regular Expression, Package handling, Debugging</li>
@@ -114,34 +100,73 @@
     <hr>
 
     <section id="education">
-        <h2>Education & Certification</h2>
-        <ul>
-            <li>B. Tech in Mech. Engineering, Synergy Institute of Engineering - Dewas, MP (2019 - 2022)</li>
-            <li>Certification in Python, Ethans Tech. Kharadi - Pune, MH (Dec 2020 - Jan 2020)</li>
-            <li>Certification in Data Science, Ethans Tech. Kharadi - Pune, MH (Feb 2020 - Mar 2020)</li>
-            <li>Certification of Django, CodeBetter - Indore, MP (Mar 2020 - Apr 2020)</li>
-            <li>Post Diploma (Tool & Die Mfg.), Indo-German Tool Room - Aurangabad, MH (AICTE Delhi) (2016 - 2017)</li>
-            <li>Advance Diploma (Tool & Die Making), Indo-German Tool Room - Indore, MP (AICTE Delhi & RGTU, Bhopal) (2010 - 2014)</li>
+        <h3>Education & Certification</h3>
+        <ul style="list-style-type: square;">
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>B. Tech in Mech. Engineering, Synergy Institute of Engineering - Dewas, MP</span>
+                    <span class="text-end">(2019 - 2022)</span>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>Certification in Python, Ethans Tech. Kharadi - Pune, MH</span>
+                    <span class="text-end">(Dec 2020 - Jan 2020)</span>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>Certification in Data Science, Ethans Tech. Kharadi - Pune, MH</span>
+                    <span class="text-end">(Feb 2020 - Mar 2020)</span>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>Certification of Django, CodeBetter - Indore, MP</span>
+                    <span class="text-end">(Mar 2020 - Apr 2020)</span>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>Post Diploma (Tool & Die Mfg.), Indo-German Tool Room - Aurangabad, MH (AICTE Delhi)</span>
+                    <span class="text-end">(2016 - 2017)</span>
+                </div>
+            </li>
+            <li>
+                <div class="d-flex justify-content-between">
+                    <span>Advance Diploma (Tool & Die Making), Indo-German Tool Room - Indore, MP (AICTE Delhi & RGTU, Bhopal)</span>
+                    <span class="text-end">(2010 - 2014)</span>
+                </div>
+            </li>
         </ul>
     </section>
+
 
     <hr>
 
     <section id="experience">
-        <h2>Professional Experience</h2>
-        <h4>VKAPS IT Solutions Pvt. Ltd - Indore, MP (Oct 2021 – Mar 2023)</h4>
+        <h3>Professional Experience</h3>
+<!--        <h5>VKAPS IT Solutions Pvt. Ltd - Indore, MP (Oct 2021 – Mar 2023)</h5>-->
+        <h5 class="d-flex justify-content-between">
+            <span>VKAPS IT Solutions Pvt. Ltd - Indore, MP</span>
+            <span class="text-end">(Oct 2021 – Mar 2023)</span>
+        </h5>
         <p>Junior Software Engineer</p>
-        <ul>
+        <ul style="list-style-type: square;">
             <li>Worked as a Python/Django developer</li>
             <li>Developed core Python scripts for web scraping</li>
             <li>Created Django web apps for web scraping, blog site, object detection in real-time, and music station</li>
             <li>Performed web scraping using BeautifulSoup and Selenium for various websites</li>
             <li>Developed sample projects in Django including Blog App, Music App, E-Commerce App, Web Scrapping App</li>
         </ul>
-
-        <h4>Algoptions Technologies Pvt Ltd - Indore, MP (Apr 2023 - Present)</h4>
+        <br>
+<!--        <h5>Algoptions Technologies Pvt Ltd - Indore, MP (Apr 2023 - Present)</h5>-->
+        <h5 class="d-flex justify-content-between">
+            <span>Algoptions Technologies Pvt Ltd - Indore, MP</span>
+            <span class="text-end">(Apr 2023 - Present)</span>
+        </h5>
         <p>Python Developer</p>
-        <ul>
+        <ul style="list-style-type: square;">
             <li>Managed “Algoptions.com” using HTML, CSS, AJAX, MySQL in Django framework</li>
             <li>Designed and implemented multiple user interfaces utilizing the Tkinter GUI Toolkit</li>
             <li>Integrated these interfaces with MySQL databases ensuring seamless data interaction</li>
@@ -149,39 +174,53 @@
             <li>Developed web scraping project on Streamlit web-framework</li>
         </ul>
 
-        <h4>Pitti Engineering Ltd. - Hyderabad, Telangana (Aug 2020 - Dec 2020)</h4>
+<!--        <h5>Pitti Engineering Ltd. - Hyderabad, Telangana (Aug 2020 - Dec 2020)</h5>-->
+        <h5 class="d-flex justify-content-between">
+            <span>Pitti Engineering Ltd. - Hyderabad, Telangana</span>
+            <span class="text-end">(Aug 2020 - Dec 2020)</span>
+        </h5>
         <p>Jr. Supervisor - Production</p>
 
-        <h4>PMT Machines Ltd. - Pune, MH (Oct 2017 - Aug 2020)</h4>
+<!--        <h5>PMT Machines Ltd. - Pune, MH (Oct 2017 - Aug 2020)</h5>-->
+        <h5 class="d-flex justify-content-between">
+            <span>PMT Machines Ltd. - Pune, MH</span>
+            <span class="text-end">(Oct 2017 - Aug 2020)</span>
+        </h5>
         <p>Jr. Engineer - Production</p>
 
-        <h4>Engeetech Engineering - Indore, MP (Jul 2014 - Sep 2016)</h4>
+<!--        <h5>Engeetech Engineering - Indore, MP (Jul 2014 - Sep 2016)</h5>-->
+        <h5 class="d-flex justify-content-between">
+            <span>Engeetech Engineering - Indore, MP</span>
+            <span class="text-end">(Jul 2014 - Sep 2016)</span>
+        </h5>
         <p>Jr. Engineer - PPC</p>
     </section>
 
     <hr>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <p>Email: <a href="mailto:mady000745@gmail.com">mady000745@gmail.com</a></p>
         <p>Contact: +917057053741</p>
+        <p>Permanent Address: C-19, Shri Nagar Colony, Mandleshwar, Dist Khargone 451221</p>
+        <p>Current Address: 199, Shyam Nagar Annex A, Near Mr 10 Square, Sukhliya, Indore, 452001</p>
     </section>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 <script>
-        function downloadResume() {
-            const element = document.getElementById('resume');
-            const opt = {
-                margin:       0.5,
-                filename:     'Jayesh_Bhawsar_Resume.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2 },
-                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-            };
-            html2pdf().from(element).set(opt).save();
-        }
-    </script>
+    function downloadResume() {
+        const element = document.getElementById('resume');
+        const opt = {
+            margin:       0.5,
+            filename:     'Jayesh_Bhawsar_Resume.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        html2pdf().from(element).set(opt).save();
+    }
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
