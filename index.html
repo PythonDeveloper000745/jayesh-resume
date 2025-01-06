@@ -23,6 +23,11 @@
     <!-- The Grid -->
     <div class="w3-row-padding">
 
+        <!-- Download Button -->
+        <div class="text-center">
+            <button onclick="downloadPDF()" class="btn btn-primary mt-4">Download as PDF</button>
+        </div>
+
         <!-- Left Column -->
         <div class="w3-third">
 
@@ -84,6 +89,7 @@
                         <li>Ongoing project using Django Framework</li>
                         <li>Working continuously on developing and enhancing features using HTML, CSS, JavaScript and MySQL.</li>
                         <li>Implementing front-end and back-end components for dynamic, database-driven functionality.</li>
+                        <li>Developed and implemented logic for trading in Futures and Options (FnO) markets, including placing positions, retrieving funds, monitoring open positions, and fetching order details. Built a dynamic and interactive streaming webpage using the Streamlit framework to display real-time trading data and insights. Enhanced the system's functionality to support seamless trading operations and efficient data visualization.</li>
                         <br>
                         User Interface Development with Tkinter
                         <li>Designed and implemented GUI applications</li>
@@ -117,13 +123,6 @@
                     </ul>
                     <hr>
                 </div>
-
-                <!--                <div class="w3-container">-->
-                <!--                    <h3 class="w3-opacity"><b>VKAPS IT Solutions Pvt. Ltd, Indore (MP)</b></h3>-->
-                <!--                    <h4 class="w3-opacity"><b>Junior Software Engineer (Python)</b></h4>-->
-                <!--                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Mar 2023</h6>-->
-                <!--                    <hr>-->
-                <!--                </div>-->
 
             </div>
 
@@ -194,6 +193,31 @@
         </a>
     </span>
 </footer>
+
+
+
+<!-- Include html2pdf.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script>
+function downloadPDF() {
+    // Select the element to convert into a PDF
+    const element = document.body; // Use the entire page content
+
+    // Configure html2pdf options
+    const options = {
+        margin: 0.5, // Adjust margins
+        filename: 'Jayesh_Bhawsar_Profile.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true }, // Enable CORS for external images
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' } // A4 paper size, portrait mode
+    };
+
+    // Generate and save the PDF
+    html2pdf().set(options).from(element).save();
+}
+
+</script>
 
 </body>
 </html>
